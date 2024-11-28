@@ -1,0 +1,103 @@
+/* ContactUs.css */
+
+/* Main container for Contact Us section */
+.contact-us {
+    background-color: #8b0000; /* Deep blood-red background */
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+
+
+  
+
+
+
+  
+  .contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent white for background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  .contact-container:hover{
+    transform: translateY(-12px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Form heading */
+  .contact-container h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 30px;
+  }
+  
+  /* Form Group */
+  .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .form-group label {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 8px;
+    display: block;
+  }
+  
+  /* Input fields */
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    outline: none;
+    border: 2px solid #b22222; /* Blood red border */
+  }
+  
+  .contact-container:hover .heading::after{
+    width: 100%;
+}
+
+  /* Submit button */
+  .submit-btn {
+    background-color: #b22222;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #8b0000;
+  }
+  
+  .submit-btn:disabled {
+    background-color: #777;
+    cursor: not-allowed;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .contact-container {
+      padding: 20px;
+    }
+  }
+  

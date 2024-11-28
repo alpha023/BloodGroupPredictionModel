@@ -1,0 +1,216 @@
+
+/* Global Styles */
+@keyframes gradientAnimation {
+  /* 0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  } */
+  0% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 50% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  75% {
+    background-position: 50% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.app{
+  /* background-color: #f3c6c6; */
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100vh;
+
+ 
+  
+}
+
+
+
+/* Gradient animation */
+
+/* General text styling */
+body, h1, h2, h3, p, a {
+  color: #ffffff; /* White text for better contrast */
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3); /* Slight shadow for clarity */
+}
+
+/* Links hover effect */
+a {
+  color: #ffdddd; /* Softer white for links */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffffff; /* Bright white on hover */
+}
+
+/*  */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(
+    135deg,
+    #ff4b4b, /* Soft coral red */
+    #f39e9e, /* Peach orange */
+    #ffdfba, /* Light peach */
+    #f8b1b1 /* Light pink */
+  );
+  background-size: 200% 200%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  animation: gradientAnimation 6s ease infinite; /* Smooth infinite animation */
+  color: #2c2c2c; /* Darker text color for contrast */
+  overflow-x: hidden;
+
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for theme change */
+}
+
+/* Light theme */
+body.light {
+  background-color: #f9f2f2; /* Light red/pinkish background */
+  color: #333; /* Dark text */
+}
+
+body.dark {
+  background-color: #2e0000; /* Dark blood-red background */
+  color: #fff; /* White text for contrast */
+}
+
+/* Sidebar Styles */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250px;
+  background-color: #800000; /* Blood red color */
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease-in-out;
+}
+
+.sidebar.light {
+  background-color: #d32f2f; /* Lighter red for light mode */
+}
+
+.sidebar h2 {
+  font-size: 1.5em;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.sidebar nav {
+  flex-grow: 1;
+}
+
+
+
+
+
+.theme-toggle-btn {
+  padding: 10px;
+  background-color: #b71c1c;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.1em;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.theme-toggle-btn:hover {
+  background-color: #f44336;
+}
+
+.theme-toggle-btn:focus {
+  outline: none;
+}
+
+/* Main content */
+.main-content {
+  margin-left: 250px; /* Sidebar width */
+  padding: 20px;
+}
+
+/* Section Styles */
+section {
+  padding: 50px;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+section h1 {
+  font-size: 2.5em;
+  color: #800000;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+section p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* Specific Section Styles for Dark Theme */
+body.dark section {
+  background-color: #4a0000; /* Darker red for section background */
+}
+
+body.dark section h1 {
+  color: #fff;
+}
+
+body.dark section p {
+  color: #ddd; /* Lighter text for readability */
+}
+
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #800000;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b71c1c;
+}
+
+/* Add transitions to smooth the overall experience */
+a {
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #b71c1c;
+}
+
+

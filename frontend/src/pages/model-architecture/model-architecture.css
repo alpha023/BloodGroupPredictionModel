@@ -1,0 +1,29 @@
+.model-architecture{
+    transition: transform 0.3s ease;
+  }
+  .model-architecture:hover{
+    transform: translateY(-12px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  .heading{
+    display: inline-block; /* Ensures the underline fits the content */
+  position: relative; /* For positioning the pseudo-element */
+  font-size: 2rem; /* Adjust the font size as needed */
+  font-weight: 700;
+  margin-bottom: 20px; /* Space below the heading */
+  text-align: center;
+  }
+.heading::after{
+    content: ''; /* Empty content for the underline */
+    position: absolute;
+    left: 0; /* Align underline to the left */
+    bottom: -5px; /* Space between text and underline */
+    width: 50%; /* Half the width of the content */
+    height: 6px; /* Thickness of the underline */
+    background-color: #d9534f; /* Blood red color or any color you choose */
+    transition: all 0.3s ease;/* Center the underline */
+}
+
+.model-architecture:hover .heading::after{
+    width: 100%;
+}

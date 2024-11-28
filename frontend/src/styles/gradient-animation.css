@@ -1,0 +1,85 @@
+@keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    25% {
+      background-position: 50% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    75% {
+      background-position: 50% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .gradient-animate-background-home {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(
+      135deg,
+      #fc3e3e, /* Soft coral red */
+      #ff7b7b, /* Peach orange */
+      #fa0000, /* Light peach */
+      #f8b1b1 /* Light pink */
+    );
+    background-size: 200% 200%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    animation: gradientAnimation 6s ease infinite; /* Smooth infinite animation */
+    color: #2c2c2c; /* Darker text color for contrast */
+    overflow-x: hidden;
+  }
+
+  /* FADED BORDER */
+
+  
+  .faded-border {
+    position: relative;
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 123, 123, 1),
+      rgba(255, 123, 123, 0.6),
+      rgba(255, 123, 123, 0)
+    ); /* Fades to transparency */
+    padding: 20px;
+    border-radius: 10px; /* Optional for smooth corners */
+    overflow: hidden; /* Ensures content doesn't overflow */
+  }
+  .top-faded-border{
+    background: linear-gradient(
+        to top,
+        rgba(255, 123, 123, 1),
+        rgba(255, 123, 123, 0.6),
+        rgba(255, 123, 123, 0)
+      );
+  }
+  .bottom-faded-border{
+    background-image: linear-gradient(
+        to bottom,
+        rgba(255, 123, 123, 1),
+        rgba(255, 123, 123, 0.6),
+        rgba(255, 123, 123, 0)
+      );
+  }
+  .left-faded-border{
+    background: linear-gradient(
+        to left,
+        rgba(255, 123, 123, 1),
+        rgba(255, 123, 123, 0.6),
+        rgba(255, 123, 123, 0)
+      );
+  }
+  .right-faded-border{
+    background: linear-gradient(
+        to right,
+        rgba(255, 123, 123, 1),
+        rgba(255, 123, 123, 0.6),
+        rgba(255, 123, 123, 0)
+      );
+  }
+  

@@ -1,0 +1,10 @@
+.accuracy{
+    transition: transform 0.3s ease;
+  }
+  .accuracy:hover{
+    transform: translateY(-12px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  .accuracy:hover .heading::after{
+    width: 100%;
+}

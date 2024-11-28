@@ -1,0 +1,20 @@
+.watermark {
+    position: absolute;
+     color:rgb(245, 201, 201); /* Low opacity blood-red color */
+     opacity: 0.4;
+    font-size: 6rem; /* Large size */
+    font-family: Arial, sans-serif;
+    pointer-events: none; /* Ensure the watermark does not block user interactions */
+    user-select: none; /* Prevent text selection */
+    transform: translate(-50%, -50%); /* Center each watermark at its random position */
+    white-space: nowrap; /* Prevent line breaks in blood group text */
+    z-index: -1; /* Place watermarks behind content */
+  }
+  
+  .app {
+    position: relative;
+    overflow: hidden; /* Ensure the watermarks do not cause scrollbars */
+    height: 100%;
+    width: 100%;
+  }
+  

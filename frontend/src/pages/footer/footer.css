@@ -1,0 +1,85 @@
+/* Footer Styles */
+.footer {
+    background-color: #4b0f12; /* Dark red background */
+    color: white; /* White text for contrast */
+    padding: 30px 20px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    z-index: 10000000;
+  }
+  
+  .footer .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer .footer-container .footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .footer .footer-container .footer-links a {
+    text-decoration: none;
+    color: #f0f0f0; /* Light text color */
+    margin: 0 15px;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .footer .footer-container .footer-links a:hover {
+    color: #d9534f; /* Blood red color on hover */
+  }
+  
+  .footer .footer-container .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer .footer-container .contact-info a {
+    color: #f0f0f0; /* Light text color */
+    font-size: 1.1rem;
+    text-decoration: none;
+    margin: 5px 0;
+    transition: color 0.3s ease;
+  }
+  
+  .footer .footer-container .contact-info a:hover {
+    color: #d9534f; /* Blood red color on hover */
+  }
+  
+  .footer .footer-container .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .footer .footer-container .social-icons a {
+    margin: 0 10px;
+    color: #f0f0f0;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  .footer .footer-container .social-icons a:hover {
+    color: #d9534f; /* Blood red color on hover */
+  }
+  
+  /* Responsive design for small screens */
+  @media (max-width: 768px) {
+    .footer .footer-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .footer .footer-container .footer-links,
+    .footer .footer-container .contact-info {
+      margin-top: 20px;
+    }
+  }
+  

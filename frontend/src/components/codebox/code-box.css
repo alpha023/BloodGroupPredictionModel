@@ -1,0 +1,66 @@
+/* src/components/CodeBox.css */
+
+.code-box-container{
+    transition: transform 0.3s ease;
+  }
+  .code-box-container:hover{
+    transform: translateY(-12px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  .code-box-container:hover .heading::after{
+    width: 100%;
+}
+.code-text{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.code-box {
+    margin: 20px auto;
+    padding: 15px;
+    background: rgba(255, 123, 123, 0.1); /* Matches the reddish theme */
+    border: 1px solid rgba(255, 123, 123, 0.3);
+    border-radius: 10px;
+    /* overflow-y: auto; Enables vertical scrolling for long code */
+    /* overflow-x: auto; Enables horizontal scrolling for long lines */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-height: 400px;
+    overflow: auto;
+
+     /* Drop shadow effect */
+  box-shadow: 0 6px 15px rgba(255, 100, 100, 0.4), 0 3px 8px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease; /* Smooth transition for hover effect */
+  }
+  .code-box pre{
+    box-shadow: 0 6px 15px rgba(255, 100, 100, 0.4), 0 3px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .code-box:hover {
+    box-shadow: 0 8px 20px rgba(255, 100, 100, 0.6), 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Scrollbar styling (optional) */
+  .code-box::-webkit-scrollbar {
+    height: 8px; /* Set height for horizontal scrollbar */
+    background-color: rgba(255, 123, 123, 0.5); /* Light background for scrollbar */
+    border-radius: 4px;
+  }
+  
+  
+  .code-box::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 123, 123, 0.5); /* Scroll thumb matches reddish theme */
+    border-radius: 4px;
+  }
+  
+  code {
+    font-size: 1rem;
+    line-height: 1.5; /* Improves readability */
+  }
+
+
+  /* src/components/CodeBox.css */
+
+  
+  /* Drop shadow applied specifically to the code container */
+  
+  
+  

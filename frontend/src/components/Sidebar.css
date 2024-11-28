@@ -1,0 +1,77 @@
+/* Sidebar Styles */
+.sidebar {
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #f0f0f0;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  z-index: 1; /* Ensure sidebar is above content */
+  overflow-y: auto;
+}
+
+.sidebar.dark {
+  background-color: #333;
+  color: #fff;
+}
+
+.sidebar h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.sidebar nav a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.2em;
+  transition: all 0.3s ease;
+  font-size: 1.2em;
+  transition: all 0.3s ease;
+}
+
+.sidebar nav a:hover {
+  cursor: pointer;
+}
+
+/* Basic link styling */
+
+
+/* Create the underline as a pseudo-element */
+.links{
+  position: relative;  /* Position the underline relative to the link */
+  text-decoration: none;  /* Remove the default underline */
+  color: #b22222;  /* Reddish color matching the theme */
+}
+.links:hover{
+  color: #f8d6d6;
+}
+.links::after {
+  content: "";  /* Empty content for the pseudo-element */
+  position: absolute;
+  left: 0;
+  bottom: 0;  /* Position at the bottom of the link */
+  width: 0%;  /* Start with no underline */
+  height: 3px;  /* Thickness of the underline */
+  background-color: #b22222;  /* Match the theme color */
+  transition: width 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Hover effect */
+.links:hover::after {
+  width: 50%; /* Full width on hover */
+}
+.heart-logo{
+  width: 200px;
+  filter: contrast(1.2) grayscale();
+  mix-blend-mode: multiply;
+  height: auto;
+  transition: all 0.3s ease;
+}
+.heart-logo:hover{
+  transform: scale(1.2);
+  filter: contrast(1.8) grayscale() brightness(1.4);
+}
